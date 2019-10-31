@@ -1,0 +1,14 @@
+@mixin button($bg-color, $font-color) {
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+//font styling is in _font.scss partial
+
+@mixin button-primary {
+    @include button($color-slate-blue, $color-white)
+}
+
+@mixin button-secondary {
+    @include button($color-sky-blue, $color-slate-blue)
+}
