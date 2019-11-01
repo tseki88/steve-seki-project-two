@@ -204,60 +204,58 @@ h6,
   font-family: "Pacifico", cursive; }
 
 * {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 2px; }
+  font-size: 20px; }
 
-h1 {
-  font-size: 3.4rem;
-  line-height: 2.29rem;
-  letter-spacing: initial; }
-
-h2 {
+h1.h1-main-page {
   font-size: 2.9rem;
-  line-height: 2.43rem;
+  line-height: 68px;
   letter-spacing: initial; }
 
-h3 {
+h1.h1-other-page {
+  font-size: 3.4rem;
+  line-height: 64px;
+  letter-spacing: initial; }
+
+h2.h2-primary {
   font-size: 2.15rem;
-  line-height: 2.07rem;
-  letter-spacing: 1.35rem; }
+  line-height: 58px;
+  letter-spacing: 2.7px; }
 
-h4 {
+h2.h2-secondary {
   font-size: 2rem;
-  line-height: initial;
-  letter-spacing: 2.15rem; }
-
-h5 {
-  font-size: 2rem;
-  line-height: 2.07rem;
-  letter-spacing: 1.25rem;
+  line-height: 58px;
+  letter-spacing: 2.5px;
   text-align: right; }
 
-h6 {
+h2.h2-comments {
+  font-size: 2rem;
+  line-height: initial;
+  letter-spacing: 4.3px; }
+
+h3 {
   font-size: 1.25rem;
   line-height: initial;
-  letter-spacing: 1.45rem; }
+  letter-spacing: 2.9px; }
 
-.logo {
+h4.logo {
   font-size: 1.07rem;
-  line-height: 0.86rem;
-  letter-spacing: 0.85rem; }
+  line-height: 24px;
+  letter-spacing: 1.7px; }
 
 .button-style {
   font-size: 0.96rem;
-  line-height: 1.14rem;
-  letter-spacing: 0.7rem;
+  line-height: 32px;
+  letter-spacing: 1.4px;
   text-align: center; }
 
 nav {
   font-size: 1rem;
-  line-height: 1.04rem;
-  letter-spacing: 0.7rem;
+  line-height: 29px;
+  letter-spacing: 1.4px;
   font-weight: bold;
   text-align: center; }
 
 body {
   font-size: 1rem;
-  line-height: 1rem;
-  letter-spacing: 1rem; }
+  line-height: 28px;
+  letter-spacing: 2px; }

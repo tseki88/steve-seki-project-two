@@ -20,50 +20,54 @@ h6,
 }
 
 * {
+    font-size: 20px;    
     // font-size($size, $height, $space)
-    @include font-size(20px, 28px, 2px);    
 }
 
 h1 {
-    @include font-size(3.4rem, 2.29rem, initial);
+    &.h1-main-page {
+        @include font-size(2.9rem, 68px, initial);
+    }
+
+    &.h1-other-page {
+        @include font-size(3.4rem, 64px, initial);
+    }
 }
 
 h2 {
-    @include font-size(2.9rem, 2.43rem, initial);
+    &.h2-primary {
+        @include font-size(2.15rem, 58px, 2.7px);
+    }
+
+    &.h2-secondary{
+        @include font-size(2rem, 58px, 2.5px);
+        text-align: right;
+    }
+
+    &.h2-comments {
+        @include font-size(2rem, initial, 4.3px);
+    }
 }
 
 h3 {
-    @include font-size(2.15rem, 2.07rem, 1.35rem);
+    @include font-size(1.25rem, initial, 2.9px);
 }
 
-h4 {
-    @include font-size(2rem, initial, 2.15rem);
-}
-
-h5 {
-    @include font-size(2rem, 2.07rem, 1.25rem);
-    text-align: right;
-}
-
-h6 {
-    @include font-size(1.25rem, initial, 1.45rem);
-}
-
-.logo {
-    @include font-size(1.07rem, 0.86rem, 0.85rem);
+h4.logo {
+    @include font-size(1.07rem, 24px, 1.7px);
 }
 
 .button-style {
-    @include font-size(0.96rem, 1.14rem, 0.7rem);
+    @include font-size(0.96rem, 32px, 1.4px);
     text-align: center;
 }
 
 nav {
-    @include font-size(1rem, 1.04rem, 0.7rem);
+    @include font-size(1rem, 29px, 1.4px);
     font-weight: bold;
     text-align: center;
 }
 
 body {
-    @include font-size(1rem, 1rem, 1rem);
+    @include font-size(1rem, 28px, 2px);
 }
