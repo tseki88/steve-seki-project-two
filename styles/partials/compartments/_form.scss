@@ -1,0 +1,39 @@
+.form-container {
+    position: relative;
+    width: 50%;
+    margin-left: 10%;
+
+    &::after {
+        content: "";
+        display: block;
+        @include pos-absolute(-5,-5,-5,-5);
+        background-color: $clr-slate-blue;
+        z-index: -1;
+        // margin: 10px;
+    }
+}
+
+form {
+    
+    input#name,
+    input#email {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $clr-turq-blue;
+        flex: 1 1 50%;
+    }
+
+    input#message,
+    input#submit {
+        width: 100%;
+    }
+
+    input#message {
+        background: none;
+        border: 1px solid $clr-turq-blue;
+    }
+
+    // &.form-contact {
+        
+    // }
+}

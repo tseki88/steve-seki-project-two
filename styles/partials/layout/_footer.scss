@@ -1,0 +1,10 @@
+footer {
+    @include set-color($clr-footer-bg, $clr-footer-font);
+    
+    text-align: center;
+    font-weight: initial;
+    
+    .footer-font {
+        margin: 0;
+    }
+}

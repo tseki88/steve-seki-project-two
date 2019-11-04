@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+.section-primary {
+    @include set-color($clr-bg-prim, $clr-black);
+
+    .h2-primary {
+        color: $clr-heading-prim;
+    }
+}
+
+.section-secondary {
+    @include set-color($clr-bg-secon, $clr-white);
+
+    .h2-secondary {
+        color: $clr-heading-secon;
+    }
+}
+
+section {
+    padding: 80px 0;
+}
+
+.banner {
+    padding: 0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.search {
+    text-align: center;
+}

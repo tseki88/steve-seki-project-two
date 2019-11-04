@@ -1,6 +1,33 @@
-$color-slate-blue: #1A315C;
-$color-black: #1E1713;
-$color-turq-blue: #0CADC0;
-$color-sky-blue: #CCEDFB;
-$color-black-two: #161515;
-$color-white: #FFFFFF;
+// Provided
+$clr-slate-blue: #1A315C;
+$clr-black: #1E1713;
+$clr-turq-blue: #0CADC0;
+$clr-sky-blue: #CCEDFB;
+$clr-black-two: #161515;
+$clr-white: #FFFFFF;
+
+// Sampled off template
+$clr-off-white: #F5F6FF;
+$clr-shade-sky-blue: #C6D8FA;
+
+
+// Logo
+$clr-logo: $clr-black;
+
+// Section Background
+$clr-bg-prim: $clr-sky-blue;
+$clr-bg-secon: $clr-slate-blue;
+
+// Heading Font
+$clr-heading-prim: $clr-slate-blue;
+$clr-heading-secon: $clr-off-white;
+
+// Footer Background
+$clr-footer-bg: $clr-black-two;
+$clr-footer-font: $clr-white;
+
+// Button
+$clr-btn-prim-bg: $clr-slate-blue;
+$clr-btn-prim-font: $clr-white;
+$clr-btn-secon-bg: $clr-shade-sky-blue;
+$clr-btn-secon-font: $clr-black-two;

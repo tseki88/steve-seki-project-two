@@ -1,6 +1,18 @@
-@import './global/_setup.scss';
-@import './global/_utilities.scss';
-@import './global/_color.scss';
-@import './global/_font.scss';
+@import './global/setup';
+@import './global/utilities';
+@import './global/color';
+@import './global/font';
+@import './global/global';
 
-@import './compartments/_button.scss';
+@import './compartments/nav';
+@import './compartments/button';
+@import './compartments/form';
+
+
+@import './layout/header';
+@import './layout/section';
+@import './layout/section-learn-new';
+@import './layout/section-gallery';
+@import './layout/section-guide';
+@import './layout/section-notice';
+@import './layout/footer';

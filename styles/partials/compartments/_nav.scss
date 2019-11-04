@@ -1,0 +1,24 @@
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        position: relative;
+        margin-left: 50px;
+
+        a {
+        // Match H1
+        color: $clr-heading-prim;
+        text-decoration: none;
+        }
+
+        &:hover::after {
+            content: "";
+            @include pos-absolute(none, 0, 0, 0);
+            border: 2px solid $clr-turq-blue;
+        }
+    }
+}

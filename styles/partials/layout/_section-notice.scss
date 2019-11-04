@@ -1,0 +1,39 @@
+.notice-content {
+    width: 100%;
+
+    &:first-of-type {
+        margin-bottom: 50px;
+    }
+    
+    &:nth-of-type(1) h2 {
+        text-align: initial;
+    }
+
+    &.flex-reverse {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+        transform: scale(1.32);
+    }
+
+    &:first-of-type img {
+        transform-origin: right bottom;
+        box-shadow: 10px 10px $clr-turq-blue;   
+    }
+
+    &:last-of-type img {
+        transform-origin: top left;
+        box-shadow: -10px 10px $clr-turq-blue;   
+    }
+}
+
+.notice-img,
+.notice-text {
+    width: 40%;
+}
+
+

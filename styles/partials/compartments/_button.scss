@@ -1,14 +1,15 @@
-@mixin button($bg-color, $font-color) {
-    background-color: $bg-color;
-    color: $font-color;
-}
-
 //font styling is in _font.scss partial
 
-@mixin button-primary {
-    @include button($color-slate-blue, $color-white)
-}
+.button-style {
+    border: none;
+    padding: 8px 25px;
 
-@mixin button-secondary {
-    @include button($color-sky-blue, $color-slate-blue)
+    &.button-primary {
+        @include set-color($clr-btn-prim-bg, $clr-btn-prim-font);
+        margin-top: 20px;
+    }
+    
+    &.button-secondary {
+        @include set-color($clr-btn-secon-bg, $clr-btn-secon-font)
+    }
 }

@@ -1,0 +1,28 @@
+.guide {
+
+    .nowrap {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .guide-content {
+        flex: 0 1 49%;
+    }
+}
+
+
+.guide-icon {
+    align-self: flex-start;
+    min-width: 60px;
+    min-height: 60px;
+    margin: 38px 20px 0 0;
+    padding: 14px;
+    @include set-color($clr-turq-blue, $clr-white);
+    border-radius: 50%;
+    
+    i {
+        width: 100%;
+    }
+
+}

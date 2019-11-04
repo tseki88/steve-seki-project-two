@@ -4,7 +4,8 @@ $font-primary: 'Lato', sans-serif;
 $font-secondary: 'Pacifico', cursive;
 
 body, 
-nav {
+nav,
+.footer-font {
     font-family: $font-primary;
 }
 
@@ -12,11 +13,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 .logo,
 .button-style {
     font-family: $font-secondary;
+    font-weight: unset;
 }
 
 * {
@@ -25,6 +25,7 @@ h6,
 }
 
 h1 {
+
     &.h1-main-page {
         @include font-size(2.9rem, 68px, initial);
     }
@@ -35,6 +36,8 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 5px;
+
     &.h2-primary {
         @include font-size(2.15rem, 58px, 2.7px);
     }
@@ -50,21 +53,26 @@ h2 {
 }
 
 h3 {
-    @include font-size(1.25rem, initial, 2.9px);
+    @include font-size(1.75rem, initial, 2.9px);
 }
 
 h4.logo {
-    @include font-size(1.07rem, 24px, 1.7px);
+    @include font-size(1.5rem, 24px, 1.7px);
 }
 
 .button-style {
-    @include font-size(0.96rem, 32px, 1.4px);
+    @include font-size(1.35rem, 32px, 1.4px);
     text-align: center;
 }
 
 nav {
     @include font-size(1rem, 29px, 1.4px);
     font-weight: bold;
+    text-align: center;
+}
+
+i {
+    @include font-size(1.4rem, 32px, initial);
     text-align: center;
 }
 

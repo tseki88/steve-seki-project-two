@@ -1,0 +1,45 @@
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &.main {
+        height: 95vh;
+        background-image: url(../assets/header-home.jpg);
+    }
+
+    &.blog {
+        height: 70vh;
+        background-image: url(../assets/blog-header.jpg);
+    }
+
+    &.contact {
+        height: 72vh;
+        background-image: url(../assets/contact-header.jpg);
+    }
+
+    .header-top {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .logo {
+        color: $clr-logo;
+    }
+
+    h1 {
+        color: $clr-heading-prim;
+        width: 40%;
+    }
+
+    .position-absolute {
+    position: relative;
+
+        img {
+            position: absolute;
+            display: block;
+            width: 50%;
+            transform: translateY(15%);
+        }
+    }
+}
