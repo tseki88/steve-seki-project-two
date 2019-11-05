@@ -2,7 +2,11 @@
     width: 100%;
 
     &:first-of-type {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
+    }
+
+    h2 {
+        margin-top: 0;
     }
     
     &:nth-of-type(1) h2 {
@@ -22,12 +26,12 @@
 
     &:first-of-type img {
         transform-origin: right bottom;
-        box-shadow: 10px 10px $clr-turq-blue;   
+        box-shadow: 13px 13px $clr-turq-blue;   
     }
 
     &:last-of-type img {
         transform-origin: top left;
-        box-shadow: -10px 10px $clr-turq-blue;   
+        box-shadow: -13px 13px $clr-turq-blue;   
     }
 }
 

@@ -1,9 +1,12 @@
 .guide {
 
-    .nowrap {
-        flex-wrap: wrap;
+    .flex {
         align-items: flex-start;
         align-content: flex-start;
+    }
+
+    .no-wrap {
+        flex-wrap: nowrap;
     }
 
     .guide-content {

@@ -5,6 +5,11 @@ header {
     &.main {
         height: 95vh;
         background-image: url(../assets/header-home.jpg);
+        background-position: bottom right;
+
+        h1 {
+            width: 40%;
+        }
     }
 
     &.blog {
@@ -29,7 +34,7 @@ header {
 
     h1 {
         color: $clr-heading-prim;
-        width: 40%;
+        width: 50%;
     }
 
     .position-absolute {
@@ -38,6 +43,7 @@ header {
         img {
             position: absolute;
             display: block;
+            min-width: 900px;
             width: 50%;
             transform: translateY(15%);
         }

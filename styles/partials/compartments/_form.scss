@@ -1,39 +1,62 @@
-.form-container {
-    position: relative;
-    width: 50%;
-    margin-left: 10%;
-
-    &::after {
-        content: "";
-        display: block;
-        @include pos-absolute(-5,-5,-5,-5);
-        background-color: $clr-slate-blue;
-        z-index: -1;
-        // margin: 10px;
+//Contact Page Only
+.form-contact .form-container{
+    border: 50px solid $clr-slate-blue;
+    box-shadow: 20px 20px $clr-turq-blue;
+    
+    input::placeholder,
+    textarea::placeholder {
+        color: inherit;
     }
 }
 
+.form-blog {
+    input::placeholder,
+    textarea::placeholder {
+        color: $clr-slate-blue;
+    }
+}
+
+//General Form
+.form-container {
+    width: 50%;
+    box-sizing: content-box;
+    transform: translate(11%, -180px);
+}
+
+
 form {
-    
+    width: 100%;
+    height: 570px;
+    box-sizing: border-box;
+
+    input::placeholder,
+    textarea::placeholder {
+        opacity: 1;
+    }
+
     input#name,
     input#email {
         background: none;
+        padding: 12px 20px;
         border: none;
-        border-bottom: 1px solid $clr-turq-blue;
-        flex: 1 1 50%;
+        border-bottom: 2px solid $clr-turq-blue;
+        flex: 0 1 44%;
+        line-height: 3rem;
     }
 
-    input#message,
+    textarea#message,
     input#submit {
-        width: 100%;
+        flex: 0 1 94%;
     }
 
-    input#message {
+    input#submit {
+        margin: 0 auto;
+    }
+
+    textarea#message {
         background: none;
-        border: 1px solid $clr-turq-blue;
+        margin: 50px auto;
+        padding: 30px 30px;
+        border: 2px solid $clr-turq-blue;
     }
-
-    // &.form-contact {
-        
-    // }
 }
