@@ -27,13 +27,15 @@
     <section class="section-primary form-section form-contact">
         <div class="form-container">
             <form action="GET" class="form-contact section-secondary flex">
-                <label for="name"></label>
-                <input type="text" name="name" placeholder="Name" id="name">
-                <label for="email"></label>
-                <input type="email" name="email" placeholder="Email address" id="email">
-                <label for="message"></label>
+                <div class="flex no-wrap">
+                    <label class="sr-only" for="name"></label>
+                    <input type="text" name="name" placeholder="Name" id="name">
+                    <label class="sr-only" for="email"></label>
+                    <input type="email" name="email" placeholder="Email address" id="email">
+                </div>
+                <label class="sr-only" for="message"></label>
                 <textarea name="message" id="message" cols="30" rows="9" placeholder="Message"></textarea>
-                <label for="submit"></label>
+                <label class="sr-only" for="submit"></label>
                 <input type="submit" value="submit" class="button-style button-secondary" id="submit">
             </form>
         </div>

@@ -1,13 +1,10 @@
 .guide {
-
     .flex {
         align-items: flex-start;
         align-content: flex-start;
     }
 
-    .no-wrap {
-        flex-wrap: nowrap;
-    }
+
 
     .guide-content {
         flex: 0 1 49%;
@@ -27,5 +24,4 @@
     i {
         width: 100%;
     }
-
 }

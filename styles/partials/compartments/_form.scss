@@ -2,6 +2,9 @@
 .form-contact .form-container{
     border: 50px solid $clr-slate-blue;
     box-shadow: 20px 20px $clr-turq-blue;
+    transform: translate(11%, -180px);
+    width: 50%;
+    margin-left: 1.5%;
     
     input::placeholder,
     textarea::placeholder {
@@ -9,6 +12,7 @@
     }
 }
 
+//Blog Page Only
 .form-blog {
     input::placeholder,
     textarea::placeholder {
@@ -17,12 +21,9 @@
 }
 
 //General Form
-.form-container {
-    width: 50%;
-    box-sizing: content-box;
-    transform: translate(11%, -180px);
+.form-contact div.flex {
+    width: 100%;
 }
-
 
 form {
     width: 100%;
@@ -40,17 +41,19 @@ form {
         padding: 12px 20px;
         border: none;
         border-bottom: 2px solid $clr-turq-blue;
-        flex: 0 1 44%;
+        flex: 1 1 44%;
         line-height: 3rem;
+        display: inline-block;
+        min-width: 0;
+    }
+
+    input#name {
+        margin-right: 50px;
     }
 
     textarea#message,
     input#submit {
-        flex: 0 1 94%;
-    }
-
-    input#submit {
-        margin: 0 auto;
+        flex: 1 1 100%;
     }
 
     textarea#message {
