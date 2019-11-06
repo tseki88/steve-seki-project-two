@@ -1,0 +1,56 @@
+.form-section {
+    position: relative;
+    padding: 0;
+}
+
+.address {
+    width: 30%;
+    color: $clr-slate-blue;
+    position: absolute;
+    top: 20%;
+    right: 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        justify-content: flex-start;
+
+        @include respond-to("large") {
+            justify-content: center;
+        }
+
+        @include respond-to("small") {
+            flex-wrap: nowrap;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        margin-right: 30px;
+
+        @include respond-to("large") {
+            margin: 0 30px;
+        }
+
+        &:hover i,
+        &:focus i {
+            transform: scale(1.05);
+            padding-bottom: 1px;
+            border-bottom: 3px solid $clr-slate-blue;
+        }
+    }
+
+    @include respond-to("large") {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+address p {
+    margin: 0;
+    font-style: normal;
+}

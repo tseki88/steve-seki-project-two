@@ -41,3 +41,20 @@
 }
 
 
+@include respond-to("huge") {
+    .notice-text {
+        width: 50%;
+    }
+}
+    
+@include respond-to("small") {
+    .notice-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .notice-img {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}

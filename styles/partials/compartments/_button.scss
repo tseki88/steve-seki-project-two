@@ -2,14 +2,30 @@
 
 .button-style {
     border: none;
-    padding: 8px 25px;
+    padding: 15px 25px;
 
-    &.button-primary {
-        @include set-color($clr-btn-prim-bg, $clr-btn-prim-font);
-        margin-top: 20px;
+    &:hover,
+    &:focus {
+        transform: translate(1px, 1px);
+        text-decoration: underline;
     }
+}
+
+.button-primary {
+    @include set-color($clr-btn-prim-bg, $clr-btn-prim-font);
+    margin-top: 20px;
+
+    &:hover,
+    &:focus {
+        @include set-color($clr-btn-prim-font, $clr-btn-prim-bg);
+    }
+}
     
-    &.button-secondary {
-        @include set-color($clr-btn-secon-bg, $clr-btn-secon-font)
+.button-secondary {
+    @include set-color($clr-btn-secon-bg, $clr-btn-secon-font);
+
+    &:hover,
+    &:focus {
+        @include set-color($clr-btn-secon-font, $clr-btn-secon-bg);
     }
 }

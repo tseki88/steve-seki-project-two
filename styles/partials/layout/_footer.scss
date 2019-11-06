@@ -6,5 +6,11 @@ footer {
     
     .footer-font {
         margin: 0;
+        
+        @include respond-to("small") {
+            width: 200px;
+            margin: 0 auto;
+        }
     }
+
 }

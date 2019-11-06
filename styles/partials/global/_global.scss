@@ -11,9 +11,32 @@ body {
 
 .no-wrap {
     flex-wrap: nowrap;
+
+    @include respond-to("medium") {
+        flex-wrap: wrap;
+    }
 }
 
 .wrapper {
     width: 80%;
     margin: 0 auto;
+
+    @include respond-to("huge") {
+        width: 90%;
+    }
+}
+
+.skip-link a {
+    @include set-color($clr-btn-prim-bg, $clr-btn-prim-font);
+    position: absolute;
+    left: -2000px;
+    
+    &:focus {
+        position: absolute;
+        left: 50%;
+    }
+}
+
+a {
+    text-decoration: none;
 }

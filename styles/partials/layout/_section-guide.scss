@@ -4,13 +4,26 @@
         align-content: flex-start;
     }
 
-
-
     .guide-content {
         flex: 0 1 49%;
+
+        @include respond-to("huge") {
+            flex-basis: 45%;
+        }
+
+        @include respond-to("medium") {
+            flex-basis: 100%;
+        }
+
+        @include respond-to("small") {
+            justify-content: center;
+
+            .guide-text h2 {
+                text-align: center;
+            }
+        }
     }
 }
-
 
 .guide-icon {
     align-self: flex-start;
@@ -23,5 +36,9 @@
     
     i {
         width: 100%;
+    }
+
+    @include respond-to("small") {
+        margin-right: 0;
     }
 }

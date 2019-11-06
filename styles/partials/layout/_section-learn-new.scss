@@ -13,4 +13,24 @@
     img {
         box-shadow: -20px 20px $clr-turq-blue;
     }
+
+    @include respond-to("medium") {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 0;
+
+        .content-text {
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @include respond-to("small") {
+        .content-text {
+            padding: 50px 5px;
+        }
+    }
 }

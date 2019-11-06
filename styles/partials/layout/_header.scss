@@ -1,6 +1,7 @@
 header {
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     
     &.main {
         height: 95vh;
@@ -9,6 +10,10 @@ header {
 
         h1 {
             width: 40%;
+            
+            @include respond-to("small") {            
+                width: 70%;
+            }
         }
     }
 
@@ -22,6 +27,24 @@ header {
         background-image: url(../assets/contact-header.jpg);
     }
 
+    &.main,
+    &.blog,
+    &.contact {
+        @include respond-to("medium") {
+            height: 65vh;
+            background-position: bottom right 30%;
+        }
+
+        @include respond-to("small") {
+            height: 100vh;
+            background-position: bottom right 35%;
+        }
+        
+        @include respond-to("tiny") {
+            background-position: bottom right 40%;
+        }
+    }
+
     .header-top {
         justify-content: space-between;
         align-items: center;
@@ -30,22 +53,45 @@ header {
 
     .logo {
         color: $clr-logo;
+
+        &:hover,
+        &:focus {
+            animation: spin 0.3s linear infinite;
+        }
     }
 
     h1 {
         color: $clr-heading-prim;
         width: 50%;
+
+        @include respond-to("medium") {
+            width: 70%;
+        }
+
+        @include respond-to("small") {            
+            width: 80%;
+        }
     }
 
-    .position-absolute {
-    position: relative;
+    .position-relative {
+        position: relative;
+    }
 
-        img {
-            position: absolute;
-            display: block;
-            min-width: 900px;
+    img {
+        position: absolute;
+        display: block;
+        min-width: 800px;
+        width: 50%;
+        transform: translateY(15%);
+
+        @include respond-to("huge") {
+            min-width: 500px;
             width: 50%;
-            transform: translateY(15%);
+            transform: translateY(45%);
+        }
+        
+        @include respond-to("medium") {
+            display: none;
         }
     }
 }

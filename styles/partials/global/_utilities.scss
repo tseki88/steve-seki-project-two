@@ -16,3 +16,45 @@
     bottom: $bottom;
     left: $left;
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+
+// Responsive breakpoint manager
+// @access public
+// @param {String} $breakpoint - Breakpoint
+// @requires $breakpoints
+
+$breakpoints: (
+    "tiny": (max-width: 400px),
+    "small": (max-width: 600px),
+    "medium": (max-width: 800px),
+    "large": (max-width: 1100px),
+    "huge": (max-width: 1400px),
+);
+
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(
+        type-of($raw-query) == "string",
+        unquote($raw-query),
+        inspect($raw-query)
+        );
+
+        @media #{$query} {
+        @content;
+        }
+    } @else {
+        @error "No value found for `#{$breakpoint}`. "
+            + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}

@@ -12,13 +12,89 @@ nav ul {
         a {
         // Match H1
         color: $clr-heading-prim;
-        text-decoration: none;
         }
 
-        &:hover::after {
+        a:hover::after,
+        a:focus::after {
             content: "";
             @include pos-absolute(none, 0, 0, 0);
             border: 2px solid $clr-turq-blue;
+        }
+    }
+}
+
+.main nav li:first-of-type a::after,
+.blog nav li:nth-of-type(3) a::after,
+.contact nav li:last-of-type a::after {
+    content: "";
+    @include pos-absolute(none, 0, 0, 0);
+    border: 2px solid $clr-turq-blue;
+}
+
+.navButton,
+.nav-toggle {
+    display: none;
+}
+
+.navButton {
+    @include set-color($clr-sky-blue, $clr-slate-blue);
+    position: fixed;
+    padding: 5px 7px;
+    border: 4px solid $clr-turq-blue;
+    top: 1.5rem;
+    right: 1.5rem;
+    transition: transform 300ms ease-in-out;
+    z-index: 15;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: translateX(0);
+}
+
+.nav-toggle:checked ~ .navButton{
+    transform: rotate(90deg);
+}
+
+.nav-toggle:checked ~ .logo{
+    animation: spin 0.3s linear infinite;
+    z-index: 30;
+}
+
+
+@include respond-to("medium") {
+    nav {
+        transform: translateX(100%);
+        @include set-color($clr-bg-prim, $clr-heading-prim);
+        @include pos-absolute(0, 0, 0, 60%);
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        z-index: 10;
+        padding: 50px;
+        border-left: 20px solid $clr-turq-blue;
+        transition: transform 300ms ease-in-out;
+
+        @include respond-to("small") {
+            @include pos-absolute(0, 0, 0, 0);
+            position: fixed;
+            width: 100%;
+        }
+    }
+    
+    .navButton {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 20%;
+
+        li {
+            margin: 10% 0;
+
+            a {
+                font-size: 1.6rem;
+            }
         }
     }
 }
