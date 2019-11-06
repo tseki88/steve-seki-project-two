@@ -28,7 +28,7 @@ nav ul {
 .contact nav li:last-of-type a::after {
     content: "";
     @include pos-absolute(100%, 0, 0, 0);
-    border: 1px solid $clr-turq-blue;
+    border: 3px solid $clr-turq-blue;
 }
 
 .navButton,
