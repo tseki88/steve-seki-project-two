@@ -26,10 +26,6 @@
         display: block;
         width: 100%;
         transform: scale(1.32);
-
-        @include respond-to("large") {
-            // transform: scale(1.5);
-        }
     }
 
     &:first-of-type img {
@@ -66,7 +62,7 @@
         margin-bottom: 50px;
     }
 
-    @include respond-to("tiny") {
-        margin: 0 auto 50px;
-    }
+    // @include respond-to("tiny") {
+    //     margin: 0 auto 50px;
+    // }
 }

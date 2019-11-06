@@ -835,10 +835,6 @@ section {
     width: 50%;
     margin-bottom: 50px; } }
 
-@media (max-width: 480px) {
-  .notice-img {
-    margin: 0 auto 50px; } }
-
 footer {
   background-color: #161515;
   color: #FFFFFF;
