@@ -347,7 +347,7 @@ nav ul {
     nav ul li a:focus::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: 100%;
       right: 0;
       bottom: 0;
       left: 0;
@@ -358,7 +358,7 @@ nav ul {
 .contact nav li:last-of-type a::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -380,6 +380,7 @@ nav ul {
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  line-height: 22px;
   z-index: 15; }
 
 .nav-toggle:checked ~ nav {
@@ -486,16 +487,21 @@ nav ul {
   width: 55%;
   margin-left: 1.5%; }
   .form-contact .form-container input::-webkit-input-placeholder, .form-contact .form-container textarea::-webkit-input-placeholder {
-    color: inherit; }
+    color: #FFFFFF;
+    opacity: 1; }
   .form-contact .form-container input::-moz-placeholder, .form-contact .form-container textarea::-moz-placeholder {
-    color: inherit; }
+    color: #FFFFFF;
+    opacity: 1; }
   .form-contact .form-container input:-ms-input-placeholder, .form-contact .form-container textarea:-ms-input-placeholder {
-    color: inherit; }
+    color: #FFFFFF;
+    opacity: 1; }
   .form-contact .form-container input::-ms-input-placeholder, .form-contact .form-container textarea::-ms-input-placeholder {
-    color: inherit; }
+    color: #FFFFFF;
+    opacity: 1; }
   .form-contact .form-container input::placeholder,
   .form-contact .form-container textarea::placeholder {
-    color: inherit; }
+    color: #FFFFFF;
+    opacity: 1; }
   @media (max-width: 1100px) {
     .form-contact .form-container {
       -webkit-transform: translateY(-100px);
@@ -511,20 +517,25 @@ nav ul {
       margin-bottom: 80px; } }
 
 .form-blog input::-webkit-input-placeholder, .form-blog textarea::-webkit-input-placeholder {
-  color: #1A315C; }
+  color: #1A315C;
+  opacity: 1; }
 
 .form-blog input::-moz-placeholder, .form-blog textarea::-moz-placeholder {
-  color: #1A315C; }
+  color: #1A315C;
+  opacity: 1; }
 
 .form-blog input:-ms-input-placeholder, .form-blog textarea:-ms-input-placeholder {
-  color: #1A315C; }
+  color: #1A315C;
+  opacity: 1; }
 
 .form-blog input::-ms-input-placeholder, .form-blog textarea::-ms-input-placeholder {
-  color: #1A315C; }
+  color: #1A315C;
+  opacity: 1; }
 
 .form-blog input::placeholder,
 .form-blog textarea::placeholder {
-  color: #1A315C; }
+  color: #1A315C;
+  opacity: 1; }
 
 .form-contact div.flex {
   width: 100%; }
@@ -534,17 +545,6 @@ form {
   height: 570px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-    opacity: 1; }
-  form input::-moz-placeholder, form textarea::-moz-placeholder {
-    opacity: 1; }
-  form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-    opacity: 1; }
-  form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
-    opacity: 1; }
-  form input::placeholder,
-  form textarea::placeholder {
-    opacity: 1; }
   form input#name {
     margin-right: 50px; }
   form input#name,
