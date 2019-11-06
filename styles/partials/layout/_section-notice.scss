@@ -44,7 +44,6 @@
     width: 40%;
 }
 
-
 .notice-text {
     @include respond-to("huge") {
         width: 50%;
@@ -58,11 +57,11 @@
 
 .notice-img {
     @include respond-to("small") {    
-        width: 50%;
+        width: 60%;
         margin-bottom: 50px;
     }
 
-    // @include respond-to("tiny") {
-    //     margin: 0 auto 50px;
-    // }
+    @include respond-to("tiny") {
+        margin: 0 auto 50px;
+    }
 }

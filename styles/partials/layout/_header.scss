@@ -10,15 +10,15 @@ header {
 
         h1 {
             width: 40%;
-            
+        
+            @include respond-to("landscape") {
+                width: 55%;
+            }
             
             @include respond-to("small") {            
                 width: 70%;
             }
 
-            @include respond-to("landscape") {
-                width: 55%;
-            }
         }
     }
 

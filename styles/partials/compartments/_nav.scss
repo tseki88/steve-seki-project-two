@@ -61,7 +61,6 @@ nav ul {
     z-index: 30;
 }
 
-
 @include respond-to("medium") {
     nav {
         transform: translateX(100%);
@@ -76,9 +75,9 @@ nav ul {
         transition: transform 300ms ease-in-out;
 
         @include respond-to("small") {
-            @include pos-absolute(0, 0, 0, 0);
+            @include pos-absolute(0, 0, 0, 25%);
             position: fixed;
-            width: 100%;
+            width: 75%;
         }
     }
     

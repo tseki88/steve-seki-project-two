@@ -13,7 +13,7 @@
  - [x] Navigation should link to other pages made for the project
 
 ## Best Practices
- - [ ] Extraneous code is removed
+ - [x] Extraneous code is removed
  - [x] Semantic HTML elements are used properly
  - [x] Setup snippet is used
  - [x] Wrapper used to constrain content on large displays

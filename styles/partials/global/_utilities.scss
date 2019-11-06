@@ -19,10 +19,10 @@
 
 @keyframes spin {
     from {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg) scale(1.5);
+        transform: rotate(360deg);
     }
 }
 
