@@ -367,11 +367,11 @@ nav ul {
   left: 0;
   border: 3px solid #0CADC0; }
 
-.navButton,
+.nav-button,
 .nav-toggle {
   display: none; }
 
-.navButton {
+.nav-button {
   background-color: #CCEDFB;
   color: #1A315C;
   position: fixed;
@@ -390,7 +390,7 @@ nav ul {
   -webkit-transform: translateX(0);
           transform: translateX(0); }
 
-.nav-toggle:checked ~ .navButton {
+.nav-toggle:checked ~ .nav-button {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
 
@@ -431,7 +431,7 @@ nav ul {
       width: 75%; } }
 
 @media (max-width: 800px) {
-  .navButton {
+  .nav-button {
     display: block; }
   nav ul {
     -webkit-box-orient: vertical;

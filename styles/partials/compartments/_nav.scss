@@ -31,12 +31,12 @@ nav ul {
     border: 3px solid $clr-turq-blue;
 }
 
-.navButton,
+.nav-button,
 .nav-toggle {
     display: none;
 }
 
-.navButton {
+.nav-button {
     @include set-color($clr-sky-blue, $clr-slate-blue);
     position: fixed;
     padding: 5px 7px;
@@ -52,7 +52,7 @@ nav ul {
     transform: translateX(0);
 }
 
-.nav-toggle:checked ~ .navButton{
+.nav-toggle:checked ~ .nav-button{
     transform: rotate(90deg);
 }
 
@@ -81,7 +81,7 @@ nav ul {
         }
     }
     
-    .navButton {
+    .nav-button {
         display: block;
     }
 
