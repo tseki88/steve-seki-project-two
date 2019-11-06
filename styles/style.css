@@ -442,11 +442,14 @@ nav ul {
 
 .button-style {
   border: none;
-  padding: 15px 25px; }
+  padding: 15px 25px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
   .button-style:hover, .button-style:focus {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px);
     text-decoration: underline; }
+  .button-style:active {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px); }
 
 .button-primary {
   background-color: #1A315C;
@@ -454,14 +457,24 @@ nav ul {
   margin-top: 20px; }
   .button-primary:hover, .button-primary:focus {
     background-color: #FFFFFF;
-    color: #1A315C; }
+    color: #1A315C;
+    -webkit-box-shadow: 0 5px #1A315C;
+            box-shadow: 0 5px #1A315C; }
+  .button-primary:active {
+    -webkit-box-shadow: 0 2px #1A315C;
+            box-shadow: 0 2px #1A315C; }
 
 .button-secondary {
   background-color: #C6D8FA;
   color: #161515; }
   .button-secondary:hover, .button-secondary:focus {
     background-color: #161515;
-    color: #C6D8FA; }
+    color: #C6D8FA;
+    -webkit-box-shadow: 0 5px #C6D8FA;
+            box-shadow: 0 5px #C6D8FA; }
+  .button-secondary:active {
+    -webkit-box-shadow: 0 2px #C6D8FA;
+            box-shadow: 0 2px #C6D8FA; }
 
 .form-contact .form-container {
   padding: 50px;
@@ -590,7 +603,7 @@ header {
     header.main, header.blog, header.contact {
       height: 100vh;
       background-position: bottom right 35%; } }
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     header.main, header.blog, header.contact {
       background-position: bottom right 40%; } }
   header .header-top {
@@ -793,10 +806,16 @@ section {
 @media (max-width: 600px) {
   .notice-text {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 20px; } }
+
+@media (max-width: 600px) {
   .notice-img {
     width: 50%;
     margin-bottom: 50px; } }
+
+@media (max-width: 480px) {
+  .notice-img {
+    margin: 0 auto 50px; } }
 
 footer {
   background-color: #161515;

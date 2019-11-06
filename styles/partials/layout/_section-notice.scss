@@ -41,20 +41,24 @@
 }
 
 
-@include respond-to("huge") {
-    .notice-text {
+.notice-text {
+    @include respond-to("huge") {
         width: 50%;
     }
-}
     
-@include respond-to("small") {
-    .notice-text {
+    @include respond-to("small") {
         width: 100%;
         margin-top: 20px;
     }
+}
 
-    .notice-img {
+.notice-img {
+    @include respond-to("small") {    
         width: 50%;
         margin-bottom: 50px;
+    }
+
+    @include respond-to("tiny") {
+        margin: 0 auto 50px;
     }
 }
