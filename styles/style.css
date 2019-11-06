@@ -224,6 +224,9 @@ h4,
   @media (max-width: 600px) {
     * {
       font-size: 18px; } }
+  @media (max-height: 500px) {
+    * {
+      font-size: 16px; } }
 
 h1.h1-main-page {
   font-size: 2.9rem;
@@ -440,6 +443,11 @@ nav ul {
       margin: 10% 0; }
       nav ul li a {
         font-size: 1.6rem; } }
+  @media (max-width: 800px) and (max-height: 500px) {
+    nav ul {
+      padding-top: 5px; }
+      nav ul li {
+        margin: 10px 0; } }
 
 .button-style {
   border: none;
@@ -515,6 +523,10 @@ nav ul {
       width: 95%;
       padding: 40px 10px;
       margin-bottom: 80px; } }
+  @media (max-height: 500px) {
+    .form-contact .form-container {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px); } }
 
 .form-blog input::-webkit-input-placeholder, .form-blog textarea::-webkit-input-placeholder {
   color: #1A315C;
@@ -589,6 +601,9 @@ header {
       @media (max-width: 600px) {
         header.main h1 {
           width: 70%; } }
+      @media (max-height: 500px) {
+        header.main h1 {
+          width: 55%; } }
   header.blog {
     height: 70vh;
     background-image: url(../assets/blog-header.jpg); }
@@ -606,6 +621,10 @@ header {
   @media (max-width: 480px) {
     header.main, header.blog, header.contact {
       background-position: bottom right 40%; } }
+  @media (max-height: 500px) {
+    header.main, header.blog, header.contact {
+      height: 100vh;
+      background-position: bottom right 35%; } }
   header .header-top {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -764,6 +783,9 @@ section {
   @media (max-width: 600px) {
     .guide-icon {
       margin-right: 0; } }
+
+.notice {
+  overflow-x: hidden; }
 
 .notice-content {
   width: 100%; }

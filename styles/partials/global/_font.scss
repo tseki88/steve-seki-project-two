@@ -26,6 +26,10 @@ h4,
     @include respond-to("small") {            
         font-size: 18px;
     }
+
+    @include respond-to("landscape") {
+        font-size: 16px;    
+    }
 }
 
 h1 {

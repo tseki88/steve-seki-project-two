@@ -11,8 +11,13 @@ header {
         h1 {
             width: 40%;
             
+            
             @include respond-to("small") {            
                 width: 70%;
+            }
+
+            @include respond-to("landscape") {
+                width: 55%;
             }
         }
     }
@@ -35,6 +40,7 @@ header {
             background-position: bottom right 30%;
         }
 
+        
         @include respond-to("small") {
             height: 100vh;
             background-position: bottom right 35%;
@@ -42,6 +48,11 @@ header {
         
         @include respond-to("tiny") {
             background-position: bottom right 40%;
+        }
+        
+        @include respond-to("landscape") {
+            height: 100vh;
+            background-position: bottom right 35%;
         }
     }
 

@@ -1,3 +1,7 @@
+.notice {
+    overflow-x: hidden;
+}
+
 .notice-content {
     width: 100%;
 
@@ -22,6 +26,10 @@
         display: block;
         width: 100%;
         transform: scale(1.32);
+
+        @include respond-to("large") {
+            // transform: scale(1.5);
+        }
     }
 
     &:first-of-type img {

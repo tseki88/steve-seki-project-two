@@ -26,6 +26,10 @@
         margin-bottom: 80px;
     }
 
+    @include respond-to("landscape") {
+        transform: translateY(20px);
+    }
+
 }
 
 //Blog Page Only
