@@ -1,6 +1,6 @@
-#Project 2 (multi-page PSD conversion)
+# Project 2 (multi-page PSD conversion)
 
-##Requirements:
+## Requirements:
  - [x] Site is responsive and uses media queries
  - [x] Flexbox is used
  - [x] Sass variables are used
@@ -12,7 +12,7 @@
  - [x] Project represents the provided design well
  - [x] Navigation should link to other pages made for the project
 
-##Best Practices
+## Best Practices
  - [ ] Extraneous code is removed
  - [x] Semantic HTML elements are used properly
  - [x] Setup snippet is used
