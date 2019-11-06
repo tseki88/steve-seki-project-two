@@ -17,7 +17,7 @@ nav ul {
         a:hover::after,
         a:focus::after {
             content: "";
-            @include pos-absolute(none, 0, 0, 0);
+            @include pos-absolute(0, 0, 0, 0);
             border: 2px solid $clr-turq-blue;
         }
     }
@@ -27,7 +27,7 @@ nav ul {
 .blog nav li:nth-of-type(3) a::after,
 .contact nav li:last-of-type a::after {
     content: "";
-    @include pos-absolute(none, 0, 0, 0);
+    @include pos-absolute(0, 0, 0, 0);
     border: 2px solid $clr-turq-blue;
 }
 

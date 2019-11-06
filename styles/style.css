@@ -347,7 +347,7 @@ nav ul {
     nav ul li a:focus::after {
       content: "";
       position: absolute;
-      top: none;
+      top: 0;
       right: 0;
       bottom: 0;
       left: 0;
@@ -358,7 +358,7 @@ nav ul {
 .contact nav li:last-of-type a::after {
   content: "";
   position: absolute;
-  top: none;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
